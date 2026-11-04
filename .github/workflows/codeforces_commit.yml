@@ -7,7 +7,9 @@ on:
 
 jobs:
   fetch-and-commit:
-    if: false  # 🚫 Prevent job from running at all
+    if: true # 🚫 Prevent job from running at all
+    env:
+      HANDLE: naveennishchalratnam28 
     runs-on: ubuntu-latest
     permissions:
       contents: write
