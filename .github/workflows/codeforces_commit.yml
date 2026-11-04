@@ -7,12 +7,13 @@ on:
 
 jobs:
   fetch-and-commit:
-    if: true # 🚫 Prevent job from running at all
+    if: false # Allow the job to run 
     env:
       HANDLE: naveennishchalratnam28 
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Do nothing
-        run: echo "Auto commit temporarily disabled."
+      - name: Fetch and commit Codeforces solutions
+        run: python fetch_submissions.py
+      
