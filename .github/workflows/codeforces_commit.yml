@@ -15,5 +15,5 @@ jobs:
       contents: write
     steps:
       - name: Fetch and commit Codeforces solutions
-        run: python fetch\_submissions.py\'
+        run: fetch_submissions.py
       
