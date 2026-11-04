@@ -7,7 +7,7 @@ on:
 
 jobs:
   fetch-and-commit:
-    if: false # Allow the job to run 
+    if: true # Allow the job to run 
     env:
       HANDLE: naveennishchalratnam28 
     runs-on: ubuntu-latest
